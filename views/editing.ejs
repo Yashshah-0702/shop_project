@@ -9,6 +9,9 @@
         <input type="text" name="desc" value="<% if(editing) {%> <%=product.desc%> <%}%>"> <br>
         <label for="image">Enter Price:-</label> 
         <input type="text" name="price" value="<% if(editing) {%> <%=product.price%> <%}%>"> <br>
+        <% if(editing) { %>
+            <input type="hidden" value="<%= product.id%>" name="productId">
+        <% } %>
         <button type="submit"> <%if (editing) { %> Update-Product <%} else { %> Add-Product <% }%> </button>
     </form>
   </main>

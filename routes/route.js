@@ -9,5 +9,8 @@ router.post('/items',control.items)
 router.post('/cart',control.postcart)
 router.get('/editproducts/:productId',control.editProduct)
 router.post('/edit-product',control.postEditProduct)
+router.post('/delete-product',control.postDeleteProduct)
+router.get('/cart',control.getCarts)
+router.post('/cart-delete-item',control.postcartdelete)
 
 module.exports =router
